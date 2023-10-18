@@ -1,0 +1,77 @@
+.course-page-sec {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.c-p-main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  position: absolute;
+  top: 9vh;
+  padding: 0 50px;
+}
+.c-p-vid > video {
+  height: 600px;
+}
+.c-p-two > button {
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  margin-left: 10px;
+  margin-top: 10px;
+  overflow-y: auto;
+  overflow-x: auto;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--text);
+  width: 100%;
+}
+.c-p-h3 {
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 1000px) {
+  .c-p-main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    top: 9vh;
+    padding: 0;
+  }
+  .c-p-vid > video {
+    width: 100%;
+    height: 200px;
+  }
+  .c-p-vid>h2,h3,p{
+    padding:0 30px;
+  }
+  .c-p-vid{
+    height: 40vh;
+    /* background-color: aquamarine; */
+    padding-bottom: 0;
+  }
+  .c-p-two{
+    height: 60vh;
+    /* background-color: blueviolet; */
+  }
+  .c-p-two > button {
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin-left: 30px;
+    margin-top: 10px;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--text);
+    width: 80%;
+   
+  }
+}

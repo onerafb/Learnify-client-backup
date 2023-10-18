@@ -1,0 +1,198 @@
+.c-courses {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: var(--white);
+}
+.c-courses-main {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  width: 100vw;
+  height: 100vh;
+}
+.c-courses-main-one {
+  background-color: var(--white);
+}
+.c-courses-main-two {
+  background-color: var(--main-dark);
+}
+.c-courses-form {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 450px;
+  height: 550px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.168);
+}
+.c-courses-choose::-webkit-file-upload-button {
+  cursor: pointer;
+  width: 140px;
+  height: 30px;
+  background-color: var(--main-dark);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-family: poppins;
+  margin-bottom: 10px;
+}
+.c-courses-input {
+  width: 300px;
+  height: 30px;
+  outline: none;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+.c-courses-input::placeholder {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: black;
+}
+.c-courses-select {
+  margin-bottom: 15px;
+}
+.c-courses-bt {
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  background-color: var(--main-dark);
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  position: relative;
+}
+.c-courses-bt:hover {
+  color: var(--white);
+  transform: scale(0.93);
+  transition: 0.3s ease;
+}
+.c-courses-bt:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  padding: 0.3rem;
+}
+.c-courses-bt::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 2px solid var(--main-dark);
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+.c-courses-imgprev {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.c-courses-img-prev-div {
+  width: 250px;
+  height: 130px;
+  background-color: var(--main-dark);
+  border: 1px solid var(--text);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .c-courses-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    height: 100vh;
+  }
+  .c-courses-form {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.168);
+  }
+  .c-courses-choose::-webkit-file-upload-button {
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+    background-color: var(--main-dark);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-family: poppins;
+    margin-bottom: 10px;
+  }
+  .c-courses-input::placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: black;
+  }
+  .c-courses-input {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    margin-bottom: 15px;
+  }
+  .c-courses-bt {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: var(--main-dark);
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .c-courses-main-one {
+    width: 100vw;
+    height: 100vh;
+  }
+  .c-courses-main-two {
+    height: 30vh;
+  }
+  .c-courses-imgprev {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .c-courses-img-prev-div {
+    width: 200px;
+    height: 100px;
+    background-color: var(--main-dark);
+    border: 1px solid var(--text);
+    overflow: hidden;
+  }
+}

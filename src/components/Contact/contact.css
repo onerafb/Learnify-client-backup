@@ -1,0 +1,145 @@
+.contact-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+}
+.contact-h2 {
+  letter-spacing: 2px;
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contact-form {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 450px;
+  height: 350px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.168);
+}
+.contact-input {
+  width: 300px;
+  height: 30px;
+  outline: none;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+.contact-input::placeholder {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: var(--text);
+}
+.contact-bt {
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  background-color: var(--main);
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-top: 15px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.3s ease;
+}
+.contact-bt:hover {
+  background-color: var(--main-dark);
+  color: var(--white);
+  transform: scale(0.93);
+  transition: 0.3s ease;
+}
+.contact-bt::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 2px solid var(--main-dark);
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+.contact-bt:hover::after{
+  transform: translate(-50%, -50%) scale(1);
+  padding: 0.3rem;
+  transition: 0.3s ease;
+}
+.contact-sign {
+  color: var(--text);
+}
+.contact-sign > span {
+  color: rgb(255, 90, 131);
+}
+@media screen and (max-width: 1200px) {
+  .contact-form {
+    background-color: var(--main-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .contact-input {
+    width: 250px;
+    height: 30px;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    margin-bottom: 15px;
+  }
+  .contact-input::placeholder {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: var(--text);
+  }
+  .contact-bt {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: var(--main);
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+   
+  }
+  .contact-sign {
+    color: var(--text);
+  }
+  .contact-sign > span {
+    color: var(--white);
+  }
+.contact-bt::after{
+  display: none;
+}
+}

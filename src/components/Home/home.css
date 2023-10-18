@@ -1,0 +1,117 @@
+.home-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  overflow: hidden;
+}
+.left {
+  width: 50vw;
+  height: 100vh;
+  /* background-color: rgb(96, 96, 96); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  width: 50vw;
+  height: 100vh;
+  /* background-color: rgb(150, 179, 169); */
+}
+.left-content {
+  width: 550px;
+  /* background-color: aquamarine; */
+}
+.left-content h1 {
+  font-size: 35px;
+  display: block;
+}
+.left-content p {
+  font-size: 25px;
+  font-weight: 500;
+  display: block;
+}
+.left-content button {
+  padding: 5px 25px;
+  border: none;
+  outline: none;
+  /* background-color: rgb(220, 173, 255); */
+  background-color: var(--main);
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-top: 5px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+.left-content button:hover {
+  background-color: var(--main-dark);
+  color: var(--white);
+  transform: scale(0.93);
+  transition: 0.3s ease;
+}
+.left-content button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 2px solid var(--main-dark);
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+.left-content button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  padding: 0.3rem;
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 1200px) {
+  .home-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(218, 179, 253);
+    position: relative;
+  }
+  .left {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(96, 96, 96);
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+  }
+  .left-content {
+    width: 350px;
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 20%;
+  }
+  .left-content h1 {
+    font-size: 25px;
+  }
+  .left-content p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+  }
+  .left-content button {
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(220, 173, 255);
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 500;
+  }
+  .right {
+    display: none;
+  }
+  .left-content button::after {
+    display: none;
+  }
+}

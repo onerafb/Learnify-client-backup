@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:poppins;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+:root {
+    --white:rgb(254, 254, 254);
+    --main: rgb(132, 255, 128);
+    --main-dark:rgb(134, 118, 255);
+    --text: rgb(0, 0, 0);
+  }

@@ -1,0 +1,244 @@
+.login-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+}
+.login-section h2 {
+  letter-spacing: 2px;
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.login-form {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 450px;
+  height: 550px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.168);
+}
+.login-input {
+  width: 300px;
+  height: 30px;
+  outline: none;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+.login-input::placeholder {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: black;
+}
+.forget-login > button {
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  background-color: var(--main-dark);
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-top: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  position: relative;
+}
+.forget-login > button:hover {
+  color: var(--white);
+  transform: scale(0.93);
+  transition: 0.3s ease;
+}
+.forget-login > button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  padding: 0.3rem;
+}
+.forget-login > button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 2px solid var(--main-dark);
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+.login-bt {
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  background-color: var(--main);
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-top: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  position: relative;
+}
+.login-bt:hover {
+  background-color: var(--main-dark);
+  color: var(--white);
+  transform: scale(0.93);
+  transition: 0.3s ease;
+}
+.login-bt:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  padding: 0.3rem;
+}
+.login-bt::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 2px solid var(--main-dark);
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+.login-sign > button {
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  background-color: var(--main);
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-top: 15px;
+  font-weight: 500;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  position: relative;
+}
+.login-sign > button:hover {
+  background-color: var(--main-dark);
+  color: var(--white);
+  transform: scale(0.93);
+  transition: 0.3s ease;
+}
+.login-sign > button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  padding: 0.3rem;
+}
+.login-sign > button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 2px solid var(--main-dark);
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+.login-sign {
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.login-sign > span {
+  color: var(--text);
+}
+@media screen and (max-width: 800px) {
+  .login-form {
+    background-color: var(--main-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .login-input {
+    width: 250px;
+    height: 30px;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    margin-bottom: 15px;
+  }
+  .forget-login > button {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 254, 255);
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .login-bt {
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    background-color: var(--main);
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    margin-top: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .login-sign > button {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: var(--main);
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+    letter-spacing: 1px;
+  }
+  .login-sign {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+  }
+  .login-sign > span {
+    color: var(--white);
+  }
+  .forget-login > button::after {
+    display: none;
+  }
+  .login-bt::after {
+    display: none;
+  }
+  .login-sign > button::after {
+    display: none;
+  }
+}

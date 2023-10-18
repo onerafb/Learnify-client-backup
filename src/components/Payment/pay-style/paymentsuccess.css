@@ -1,0 +1,155 @@
+.pay-suc {
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+}
+.pay-suc-h2 {
+  letter-spacing: 2px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pay-suc-con {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.168);
+}
+.pay-suc-one {
+  background-color: var(--main-dark);
+  width: 400px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.pay-suc-one > p {
+  margin-left: 20px;
+  color: var(--white);
+}
+.pay-suc-two {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.pay-suc-two > .p1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.pay-suc-two > .p2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.pay-suc-two > .pay-suc-link > button {
+  margin-bottom: 50px;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  background-color: var(--main);
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.3s ease;
+}
+.pay-suc-two > .pay-suc-link > button:hover {
+  background-color: var(--main-dark);
+  color: var(--white);
+  transform: scale(0.93);
+  transition: 0.3s ease;
+}
+.pay-suc-two > .pay-suc-link > button::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 2px solid var(--main-dark);
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+.pay-suc-two > .pay-suc-link > button:hover::after{
+  transform: translate(-50%, -50%) scale(1);
+  padding: 0.3rem;
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 1200px) {
+    .pay-suc-con {
+        /* background-color: rgb(220, 220, 252); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 350px;
+        height: 400px;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+      }
+      .pay-suc-one {
+        background-color: var(--main-dark);
+        width: 350px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+      }
+      .pay-suc-one > p {
+        margin-left: 20px;
+        color: var(--white);
+      }
+      .pay-suc-two {
+        width: 350px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      .pay-suc-two > .p1 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      .pay-suc-two > .p2 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .pay-suc-two > .pay-suc-link > button {
+        margin-bottom: 40px;
+        padding: 5px 10px;
+        border: none;
+        outline: none;
+        background-color: var(--main);
+        border-radius: 5px;
+        letter-spacing: 1px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+.pay-suc-two > .pay-suc-link > button::after{
+  display: none;
+}
+}

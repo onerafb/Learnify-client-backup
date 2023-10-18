@@ -1,0 +1,253 @@
+.register-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+}
+.reg-h2 {
+  letter-spacing: 2px;
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.register-form {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 450px;
+  height: 550px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.168);
+}
+.avatar-div {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.register-input {
+  width: 300px;
+  height: 30px;
+  outline: none;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+.register-input::placeholder {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: var(--text);
+}
+.register-bt {
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  background-color: var(--main);
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-top: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  position: relative;
+}
+.register-bt:hover {
+  background-color: var(--main-dark);
+  color: var(--white);
+  transform: scale(0.93);
+  transition: 0.3s ease;
+}
+.register-bt:hover::after{
+  transform: translate(-50%,-50%) scale(1);
+  padding: 0.3rem;
+}
+.register-bt::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  border: 2px solid var(--main-dark);
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+.register-sign > button {
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  background-color: var(--main);
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-top: 15px;
+  font-weight: 500;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  position: relative;
+}
+.register-sign > button:hover {
+  background-color: var(--main-dark);
+  color: var(--white);
+  transform: scale(0.93);
+  transition: 0.3s ease;
+}
+.register-sign > button::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  border: 2px solid var(--main-dark);
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+.register-sign > button:hover::after{
+  transform: translate(-50%,-50%) scale(1);
+  padding: 0.3rem;
+}
+.reg-img {
+  width: 80px;
+  height: 80px;
+  background-color: var(--main-dark);
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  overflow: hidden;
+}
+.reg-img > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  text-indent: -10000px
+}
+.choose::-webkit-file-upload-button {
+  cursor: pointer;
+  width: 130px;
+  height: 30px;
+  background-color: var(--main-dark);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 20px;
+}
+
+.choose::-webkit-file-upload-button:hover {
+  color: var(--white);
+}
+.label {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .register-form {
+    background-color: var(--main-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .register-input {
+    width: 250px;
+    height: 30px;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    margin-bottom: 15px;
+  }
+  .register-input::placeholder {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: var(--text);
+  }
+  .register-bt {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: var(--main);
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .register-sign > button {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: var(--main);
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+    letter-spacing: 1px;
+  }
+  .register-sign>span{
+    color: var(--white);
+    letter-spacing: 0.5px;
+  }
+  .reg-img {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(198, 162, 234);
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .reg-img > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .choose::-webkit-file-upload-button {
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+    background-color: rgb(255, 202, 202);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    color: var(--text);
+  }
+  .label {
+    margin-bottom: 10px;
+  }
+.register-sign > button::after{
+  display: none;
+}
+.register-bt::after{
+  display: none;
+}
+}

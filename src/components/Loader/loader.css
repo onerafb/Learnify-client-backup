@@ -1,0 +1,15 @@
+.loader-loading{
+    letter-spacing: 2px;
+}
+.loader-main{
+    background-color: rgb(197, 146, 245);
+    width: 100vw;
+     height: 100vh; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 40px;
+     margin: 0;
+     padding: 0;
+    /* position: fixed; */
+}
